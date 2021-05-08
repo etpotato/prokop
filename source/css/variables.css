@@ -1,0 +1,18 @@
+:root {
+  font-size: 14px;
+  line-height: 24px;
+
+  --lighttheme-text-basic: rgba(0, 0, 0, 0.9);
+  --lighttheme-text-neutral: rgba(0, 0, 0, 0.6);
+  --lighttheme-text-placeholder: rgba(0, 0, 0, 0.3);
+  --lighttheme-text-invert: rgb(255, 255, 255);
+  --lighttheme-textshadow-basic: rgba(255, 255, 255, 0.8);
+  --lighttheme-textshadow-invert: rgba(0, 0, 0, 0.6);
+  --lighttheme-background-basic: rgb(255, 255, 255);
+  --lighttheme-background-accent: #ffaa01;
+  --lighttheme-button: #f7ce5a;
+  --lighntheme-button-active: #25c8d1;
+  --lighttheme-active-state: #25c8d1;
+  --lighttheme-boxshadow: rgba(0, 0, 0, 0.2);
+}
+/*f25f3a 223657 */

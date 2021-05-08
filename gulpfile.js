@@ -9,6 +9,7 @@ const sourcemap = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const postcssCustomProperties = require('postcss-custom-properties');
+const postcssImport = require('postcss-import');
 const csso = require('gulp-csso');
 const gulpWebp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
@@ -39,14 +40,15 @@ const html = () => {
 // Styles
 
 const styles = () => {
-  return gulp.src('source/sass/style.scss')
+  return gulp.src('source/css/style.css')
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(postcss([
-      autoprefixer(),
+      postcssImport(),
       postcssCustomProperties({
         preserve: true,
       }),
+      autoprefixer(),
     ]))
     .pipe(csso())
     .pipe(rename('style.min.css'))
@@ -54,6 +56,7 @@ const styles = () => {
     .pipe(gulp.dest('build/css'))
     .pipe(sync.stream());
 }
+
 
 exports.styles = styles;
 
@@ -164,7 +167,9 @@ const watcher = () => {
 
 exports.default = gulp.series(
   clear,
-  gulp.parallel(html, styles, copy, webp, sprite, jsDev),
+  gulp.parallel(html, styles, copy, webp, sprite,
+    // jsDev
+  ),
   server,
   watcher
 );
@@ -173,6 +178,8 @@ exports.default = gulp.series(
 
 exports.build = gulp.series(
   clear,
-  gulp.parallel(html, styles, copyFonts, optimizeImages, webp, sprite, jsProd),
+  gulp.parallel(html, styles, copyFonts, optimizeImages, webp, sprite,
+    // jsProd
+  ),
   server
 );
