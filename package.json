@@ -10,7 +10,8 @@
     "eslint": "eslint source/js/",
     "test": "npm run editorconfig && npm run stylelint && npm run eslint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "sprite": "gulp sprite"
   },
   "browserslist": [
     "last 2 versions",
@@ -53,5 +54,8 @@
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.4",
     "webpack-stream": "6.1.2"
+  },
+  "dependencies": {
+    "@splidejs/splide": "2.4.21"
   }
 }

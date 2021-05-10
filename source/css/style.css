@@ -4,5 +4,9 @@
 @import "blocks/page.css";
 @import "blocks/header.css";
 @import "blocks/main.css";
+@import "blocks/section.css";
 @import "blocks/book.css";
+@import "blocks/review.css";
 @import "blocks/footer.css";
+
+@import "blocks/splide.min.css";
