@@ -1,0 +1,140 @@
+.service__table {
+  margin-bottom: 48px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.service__table-body {
+  counter-reset: service;
+}
+
+.service__table-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 32px 0 32px 44px;
+  border-top: 1px solid var(--text-underline);
+}
+
+.service__table-row:last-child {
+  border-bottom: 1px solid var(--text-underline);
+}
+
+.service__table-name {
+  position: relative;
+  margin-bottom: 12px;
+  padding: 0;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.service__table-name::before {
+  counter-increment: service;
+  content: counter(service);
+  position: absolute;
+  top: 2px;
+  left: -44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--text-basic);
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.service__table-price {
+  flex: 1 0 100%;
+  padding: 0;
+  font-size: 18px;
+  line-height: 23px;
+  white-space: nowrap;
+}
+
+.service__note {
+  position: relative;
+  left: -12px;
+  width: calc(100% + 24px);
+  padding: 32px 24px 40px 24px;
+  border-radius: 22px;
+  background-color: var(--background-neutral);
+}
+
+.service__note-text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.service__form__tel-link {
+  display: block;
+  margin: 0 auto;
+  padding: 19px;
+  width: 100%;
+  min-width: 200px;
+  border-radius: 16px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--text-basic);
+  text-decoration: none;
+  background-color: var(--accent);
+  outline-offset: 2px;
+  white-space: nowrap;
+  user-select: none;
+  touch-action: none;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .service__table-row {
+    flex-wrap: nowrap;
+    padding: 24px 0 24px 100px;
+  }
+
+  .service__table-name {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+
+  .service__table-name::before {
+    top: 0;
+    left: -100px;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .service__table-price {
+    flex: 1 0 90px;
+    text-align: right;
+  }
+
+  .service__note {
+    left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 80px);
+    padding: 40px;
+  }
+
+  .service__note-text {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  .service__form {
+    flex: 1 0 47%;
+  }
+
+  .service__form__tel-link {
+    flex: 1 0 45%;
+  }
+}

@@ -1,72 +1,71 @@
-.main {
-  padding-top: 40px;
-  overflow: hidden;
-  max-width: 100%;
+.main__top-wrapper {
+  margin-bottom: 56px;
 }
 
 .main__title {
-  position: relative;
   margin-top: 0;
   margin-bottom: 40px;
-  margin-left: auto;
-  max-width: 400px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.4rem;
-  line-height: 3rem;
-  font-weight: 600;
-  letter-spacing: -1px;
-  text-align: right;
-  text-shadow: 0 0 4px var(--textshadow-invert);
-  color: var(--text-invert);
-}
-
-.main__title::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  display: block;
-  width: 110vw;
-  max-width: 380px;
-  height: 110vw;
-  max-height: 380px;
-  border-radius: 60px;
-  background-color: var(--background-accent);
-  transform: translate(18%, -52%) rotate(45deg);
-  z-index: -1;
-}
-
-.main__picture {
-  display: block;
-  width: 100%;
   margin-right: auto;
-  margin-bottom: 30px;
+  max-width: 400px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.main__title-image {
+  display: block;
+  margin-bottom: 56px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.main__section {
+  margin-bottom: 80px;
+}
+
+.main__book {
+  margin-bottom: 64px;
+}
+
+@media (min-width: 360px) {
+  .main__title {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 900px) {
-  .main {
-    overflow: visible;
+  .main__top-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 45%;
+    grid-template-rows: auto auto;
+    column-gap: 10%;
+    row-gap: 56px;
+    align-content: center;
+    margin-bottom: 120px;
   }
 
   .main__title {
-    margin-left: 0;
-    max-width: 800px;
-    font-size: 3.5rem;
-    line-height: 4rem;
-    text-align: left;
+    align-self: end;
+    margin: 0;
+    max-width: 100%;
+    font-size: min(56px, 4vw);
+    line-height: min(64px, 4.6vw);
   }
 
-  .main__title::before {
-    left: 0;
-    width: 70vw;
-    max-width: 800px;
-    height: 70vw;
-    max-height: 800px;
-    border-radius: 100px;
-    transform: translate(6%, -50%) rotate(45deg);
+  .main__title-picture {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
   }
 
-  .main__picture {
-    margin-bottom: 60px;
+  .main__title-image {
+    margin-bottom: 0;
+  }
+
+  .main__section {
+    margin-bottom: 120px;
+  }
+
+  .main__book {
+    margin-bottom: 120px;
   }
 }

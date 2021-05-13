@@ -1,34 +1,267 @@
 <main class="page__main main">
   <div class="container">
-    <h1 class="main__title">
-      <nobr>Мини-экскаватор</nobr> в Москве и&nbsp;области
-    </h1>
-    <picture class="main__picture">
-      <img class="main__image" src="img/header-image.png" alt="Мастер работает на миниэкскаваторе">
-    </picture>
-    <section class="book">
-      <h2 class="book__title">Оставить заявку на аренду</h2>
-      <form class="book__form" action="https://echo.htmlacademy.ru/courses" method="POST" enctype="multipart/form-data">
-        <label class="book__form-label">
-          <span class="visually-hidden">Оставьте Ваш номер телефона</span>
-          <input class="book__form-input" type="tel" name="book_tel" placeholder="+7 (999) 859-69-15" required>
-        </label>
-        <div class="book__submit-wrapper">
-          <button class="book__submit" type="button">Отправить</button>
+    <div class="main__top-wrapper">
+      <h1 class="main__title">
+        Земляные работы в&nbsp;Москве и&nbsp;области
+      </h1>
+      <picture class="main__title-picture">
+        <source
+          type="image/webp"
+          sizes="(min-width: 900px) 50vw, 100vw"
+          srcset="img/title-image-400.webp 400w,
+            img/title-image-600.webp 600w,
+            img/title-image-900.webp 900w">
+        <img
+          class="main__title-image"
+          src="img/title-image-600.jpg"
+          alt="Молодой мужчина работает на мини-экскаваторе и улыбается"
+          sizes="(min-width: 900px) 50vw, 100vw"
+          srcset="img/title-image-400.jpg 400w,
+          img/title-image-600.jpg 600w,
+          img/title-image-900.jpg 900w">
+      </picture>
+      <form class="main__form form" action="https://echo.htmlacademy.ru/courses" method="POST" enctype="multipart/form-data">
+        <div class="form__label-wrapper">
+          <label class="form__label">
+            <input class="form__input" type="tel" name="tel" placeholder="+7 (999) 859-69-15" required>
+            <span class="form__label-text">Ваш номер телефона</span>
+          </label>
+          <button class="form__reset" type="reset">
+            <span class="visually-hidden">Очистить</span>
+          </button>
+        </div>
+        <div class="form__submit-wrapper">
+          <button class="form__submit" type="submit">Заказать звонок</button>
         </div>
       </form>
+      <!-- <a class="form__tel-link" href="tel:+79998596915">Позвонить</a> -->
+    </div>
+    <section class="main__section section service">
+      <h2 class="visually-hidden">Наши услуги</h2>
+      <p class="section__lead">
+        Здравствуйте.&thinsp;<br class="break--mobile">Меня зовут Григорий. Я&nbsp;провожу
+        <b class="section__lead-accent">земляные работы любой сложности </b>
+        быстро и&nbsp;неодорого.
+      </p>
+      <table class="service__table">
+        <thead class="visually-hidden">
+          <tr>
+            <th>Услуга</th>
+            <th>Цена</th>
+          </tr>
+        </thead>
+        <tbody class="service__table-body">
+          <tr class="service__table-row">
+            <td class="service__table-name">Доставка техники до объекта</td>
+            <td class="service__table-price">от 5.000 &#8381;</td>
+          </tr>
+          <tr class="service__table-row">
+            <td class="service__table-name">Прокладка траншеи</td>
+            <td class="service__table-price">от 10.000 &#8381;</td>
+          </tr>
+          <tr class="service__table-row">
+            <td class="service__table-name">Установка дренажной системы</td>
+            <td class="service__table-price">от 1.000 &#8381;/м</td>
+          </tr>
+          <tr class="service__table-row">
+            <td class="service__table-name">Укладка коммуникаций</td>
+            <td class="service__table-price">от 700 &#8381;/м</td>
+          </tr>
+          <tr class="service__table-row">
+            <td class="service__table-name">Монтаж станции биологической очистки (септика)</td>
+            <td class="service__table-price">от 20.000 &#8381;</td>
+          </tr>
+          <tr class="service__table-row">
+            <td class="service__table-name">Корчевание пней</td>
+            <td class="service__table-price">от 15.000 &#8381;</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="service__note">
+        <p class="service__note-text">Если вы не&nbsp;увидели нужной вам услуги, просто позвоните мне&nbsp;— мы всё обсудим индивидуально.</p>
+        <form class="service__form form" action="https://echo.htmlacademy.ru/courses" method="POST" enctype="multipart/form-data">
+            <div class="form__label-wrapper form__label-wrapper--alt-background">
+              <label class="form__label">
+                <input class="form__input" type="tel" name="tel" placeholder="+7 (999) 859-69-15" required>
+                <span class="form__label-text">Ваш номер телефона</span>
+              </label>
+              <button class="form__reset" type="reset">
+                <span class="visually-hidden">Очистить</span>
+              </button>
+            </div>
+            <div class="form__submit-wrapper">
+              <button class="form__submit" type="submit">Заказать звонок</button>
+            </div>
+        </form>
+        <!-- <a class="service__form__tel-link" href="tel:+79998596915">Позвонить</a> -->
+      </div>
     </section>
-    <section class="review section section--gradient-1">
-      <h2 class="review__title section__title">Отзывы</h2>
+    <section class="main__section section result">
+      <h2 class="visually-hidden">Ход работы и результаты</h2>
+      <p class="section__lead">Ход моей работы, от&nbsp;прибытия до&nbsp;конечного
+        <b class="section__lead-accent">результата</b>, можно посмотреть в&nbsp;галерее.
+      </p>
+      <div class="splide splide--result">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <figure class="result__figure">
+                <picture class="result__picture">
+                  <source
+                    type="image/webp"
+                    sizes="100vw"
+                    srcset="img/result-1-400.webp 400w,
+                      img/result-1-600.webp 600w,
+                      img/result-1-900.webp 900w">
+                  <img
+                    class="result__image"
+                    sizes="100vw"
+                    srcset="img/result-1-400.jpg 400w,
+                      img/result-1-600.jpg 600w,
+                      img/result-1-900.jpg 900w"
+                    src="img/result-1.jpg"
+                    alt="Выкопанная траншея с грунтовыми водами"
+                    loading="lazy">
+                </picture>
+                <figcaption class="result__figcaption">На фото представлен результат прокладки траншеи для дренажной системы. Обратите внимание, как быстро она заполнятся грунтовыми водами.</figcaption>
+              </figure>
+            </li>
+            <li class="splide__slide">
+              <figure class="result__figure">
+                <picture class="result__picture">
+                  <source
+                    type="image/webp"
+                    sizes="100vw"
+                    srcset="img/result-2-400.webp 400w,
+                      img/result-2-600.webp 600w,
+                      img/result-2-900.webp 900w">
+                  <img
+                    class="result__image"
+                    sizes="100vw"
+                    srcset="img/result-2-400.jpg 400w,
+                      img/result-2-600.jpg 600w,
+                      img/result-2-900.jpg 900w"
+                    src="img/result-2.jpg"
+                    alt="Мини-экскаватор на фоне выкопанной траншеи"
+                    loading="lazy">
+                </picture>
+                <figcaption class="result__figcaption">Мини-экскаватор мал, да удал. За смену выкопали траншею глубиной с человеческий рост!</figcaption>
+              </figure>
+            </li>
+            <li class="splide__slide">
+              <figure class="result__figure">
+                <picture class="result__picture">
+                  <source
+                    type="image/webp"
+                    sizes="100vw"
+                    srcset="img/result-3-400.webp 400w,
+                      img/result-3-600.webp 600w,
+                      img/result-3-900.webp 900w,
+                      img/result-3-1200.webp 1200w">
+                  <img
+                    class="result__image"
+                    sizes="100vw"
+                    srcset="img/result-3-400.jpg 400w,
+                      img/result-3-600.jpg 600w,
+                      img/result-3-900.jpg 900w,
+                      img/result-3-1200.jpg 1200w"
+                    src="img/result-3.jpg"
+                    alt="Мини-экскаватор и высокая земляная куча"
+                    loading="lazy">
+                </picture>
+                <figcaption class="result__figcaption">Одно из преимуществ мини-экскаватора - эго размер. Такая техника может работать в ограниченном пространстве, а по эффективности не уступает полноразмерным машинам.</figcaption>
+              </figure>
+            </li>
+            <li class="splide__slide">
+              <figure class="result__figure">
+                <picture class="result__picture">
+                  <source
+                    type="image/webp"
+                    sizes="100vw"
+                    srcset="img/result-4-400.webp 400w,
+                      img/result-4-600.webp 600w,
+                      img/result-4-900.webp 900w,
+                      img/result-4-1200.webp 1200w">
+                  <img
+                    class="result__image"
+                    sizes="100vw"
+                    srcset="img/result-4-400.jpg 400w,
+                      img/result-4-600.jpg 600w,
+                      img/result-4-900.jpg 900w,
+                      img/result-4-1200.jpg 1200w"
+                    src="img/result-4.jpg"
+                    alt="Крупная прямоугольная треншея, заполненная водой"
+                    loading="lazy">
+                </picture>
+                <figcaption class="result__figcaption">Грунтовые воды имеют свойство скапливаться в местах с низким уровнем грунта. Этой особенностью мы пользуемся для формирования сточной канавы.</figcaption>
+              </figure>
+            </li>
+            <li class="splide__slide">
+              <figure class="result__figure">
+                <picture class="result__picture">
+                  <source
+                    type="image/webp"
+                    sizes="100vw"
+                    srcset="img/result-5-400.webp 400w,
+                      img/result-5-600.webp 600w,
+                      img/result-5-900.webp 900w,
+                      img/result-5-1200.webp 1200w">
+                  <img
+                    class="result__image"
+                    sizes="100vw"
+                    srcset="img/result-5-400.jpg 400w,
+                      img/result-5-600.jpg 600w,
+                      img/result-5-900.jpg 900w,
+                      img/result-5-1200.jpg 1200w"
+                    src="img/result-5.jpg"
+                    alt="Григорий управляет мини-экскаватором"
+                    loading="lazy">
+                </picture>
+                <figcaption class="result__figcaption">Для управления экскаватором нужно пройти профильное обучение. И не зря, ведь довериться можно только сертифицированному специалисту.</figcaption>
+              </figure>
+            </li>
+            <li class="splide__slide">
+              <figure class="result__figure">
+                <picture class="result__picture">
+                  <source
+                    type="image/webp"
+                    sizes="100vw"
+                    srcset="img/result-6-400.webp 400w,
+                      img/result-6-600.webp 600w,
+                      img/result-6-900.webp 900w,
+                      img/result-6-1200.webp 1200w">
+                  <img
+                    class="result__image"
+                    sizes="100vw"
+                    srcset="img/result-6-400.jpg 400w,
+                      img/result-6-600.jpg 600w,
+                      img/result-6-900.jpg 900w,
+                      img/result-6-1200.jpg 1200w"
+                    src="img/result-6.jpg"
+                    alt="Курпный пень, извлеченный из земли"
+                    loading="lazy">
+                </picture>
+                <figcaption class="result__figcaption">Корчевание пней - нелегкая задача даже для специализированной техники. Но богатый опыт позволяет добиться отличного результата в короткие сроки.</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="main__section section review">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <p class="section__lead">За время работы успел выполнить более 30&nbsp;заказов и&nbsp;получить
+        <b class="section__lead-accent">несколько отзывов</b> от&nbsp;клиентов
+      </p>
       <div class="splide splide--review">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
               <article class="review__article">
-                <h3 class="review__article-title">Отличная работа!</h3>
+                <h3 class="review__article-title">Отличная работа.</h3>
                 <blockquote class="review__text">На моём дачном участке из-за особенностей ландшафта давно скапливалась вода. Огромные лужи, невозможно ходить! От знакомых узнал о данной компании и специалисте - Григории Королёве. Приятный в общении и ответственный на деле, Григорий сделал дренаж всего за один день. Наконец могу наслаждаться своей фазендой. Ставлю лойс!</blockquote>
                 <footer class="review__footer">
-                  <img class="review__photo" src="img/user-1.jpg" width="100" height="100" alt="Фото автора отзыва">
+                  <img class="review__photo" src="img/user-1.jpg" width="200" height="200" alt="Фото автора отзыва">
                   <p class="review__user">
                     <span class="review__user-name">Павел Мареев</span>
                     <a class="review__user-link review__user-link--instagram" href="https://www.instagram.com/etpotato">
@@ -36,18 +269,18 @@
                     </a>
                   </p>
                   <p class="review__date">
-                    Дата: <time datetime="2021-05-10">10.05.2021</time>
+                    <time datetime="2021-05-10">10 мая 2021</time>
                   </p>
-                  <p class="review__case">Услуга: дренаж грунтовых вод садового участка</p>
+                  <p class="review__case">Дренаж грунтовых вод садового участка</p>
                 </footer>
               </article>
             </li>
             <li class="splide__slide">
               <article class="review__article">
-                <h3 class="review__article-title">Мне трудно угодить, но у них получилось.</h3>
+                <h3 class="review__article-title">Мне трудно угодить, но у&nbsp;ребят получилось.</h3>
                 <blockquote class="review__text">Не люблю заниматься хозяйством сам, поэтому во время постройки дома обратился за помощью к профессионалам. Оказывается, выкопать мини-экскаватором траншею для коммуникаций можно быстро и качественно. Главное - найти правильного оператора!</blockquote>
                 <footer class="review__footer">
-                  <img class="review__photo" src="img/user-2.jpg" width="100" height="100" alt="Фото автора отзыва">
+                  <img class="review__photo" src="img/user-2.jpg" width="200" height="200" alt="Фото автора отзыва">
                   <p class="review__user">
                     <span class="review__user-name">Алексей Ветров</span>
                     <a class="review__user-link review__user-link--telegram" href="https://t.me/bdayeve">
@@ -55,9 +288,9 @@
                     </a>
                   </p>
                   <p class="review__date">
-                    Дата: <time datetime="2021-05-02">02.05.2021</time>
+                    <time datetime="2021-05-02">2 мая 2021</time>
                   </p>
-                  <p class="review__case">Услуга: прокоп для подвода коммуникаций</p>
+                  <p class="review__case">Прокоп для&nbsp;подвода коммуникаций</p>
                 </footer>
               </article>
             </li>
@@ -66,7 +299,7 @@
                 <h3 class="review__article-title">Отлично, хоть и не дёшево!</h3>
                 <blockquote class="review__text">Живу в родительском доме один. Приходится содержать хозяйство самому, а это дело нелёгкое, тем более дом старый. Весной решил заменить водопроводные трубы и подключить центральную канализацию. Для прокопа новых траншей решил обратиться к Григорию. Работой доволен, рекомендую!</blockquote>
                 <footer class="review__footer">
-                  <img class="review__photo" src="img/user-3.jpg" width="100" height="100" alt="Фото автора отзыва">
+                  <img class="review__photo" src="img/user-3.jpg" width="200" height="200" alt="Фото автора отзыва">
                   <p class="review__user">
                     <span class="review__user-name">Олег Сысоев</span>
                     <a class="review__user-link review__user-link--vk" href="https://vk.com/id85958874">
@@ -74,66 +307,66 @@
                     </a>
                   </p>
                   <p class="review__date">
-                    Дата: <time datetime="2021-04-25">25.04.2021</time>
+                    <time datetime="2021-04-27">27 апреля 2021</time>
                   </p>
-                  <p class="review__case">Услуга: прокоп для замены коммуникаций</p>
+                  <p class="review__case">Прокоп для&nbsp;замены коммуникаций</p>
                 </footer>
               </article>
             </li>
             <li class="splide__slide">
               <article class="review__article">
-                <h3 class="review__article-title">Отличная работа!</h3>
-                <blockquote class="review__text">На моём дачном участке из-за особенностей ландшафта давно скапливалась вода. Огромные лужи, невозможно ходить! От знакомых узнал о данной компании и специалисте - Григории Королёве. Приятный в общении и ответственный на деле, Григорий сделал дренаж всего за один день. Наконец могу наслаждаться своей фазендой. Ставлю лойс!</blockquote>
+                <h3 class="review__article-title">Аккуратно и&nbsp;эффективно.</h3>
+                <blockquote class="review__text">По рекомендации друга обратился к Григорию за помощью в очистке участка от старых деревьев и пней. Был приятно удивлен результатом. Всего за пару часов работы удалось выкорчевать несколько крупных пней, которые мешали проезду и проходу. Буду советовать друзьям.</blockquote>
                 <footer class="review__footer">
-                  <img class="review__photo" src="img/user-1.jpg" width="100" height="100" alt="Фото автора отзыва">
+                  <img class="review__photo" src="img/user-4.jpg" width="200" height="200" alt="Фото автора отзыва">
                   <p class="review__user">
-                    <span class="review__user-name">Павел Мареев</span>
-                    <a class="review__user-link review__user-link--instagram" href="https://www.instagram.com/etpotato">
+                    <span class="review__user-name">Владимир Зентинов</span>
+                    <a class="review__user-link review__user-link--instagram" href="https://www.instagram.com/uncle_volodya">
                       <span class="visually-hidden">Инстаграм</span>
                     </a>
                   </p>
                   <p class="review__date">
-                    Дата: <time datetime="2021-05-10">10.05.2021</time>
+                    <time datetime="2021-04-26">26 апреля 2021</time>
                   </p>
-                  <p class="review__case">Услуга: дренаж грунтовых вод садового участка</p>
+                  <p class="review__case">Корчевание пней</p>
                 </footer>
               </article>
             </li>
             <li class="splide__slide">
               <article class="review__article">
-                <h3 class="review__article-title">Мне трудно угодить, но у них получилось.</h3>
-                <blockquote class="review__text">Не люблю заниматься хозяйством сам, поэтому во время постройки дома обратился за помощью к профессионалам. Оказывается, выкопать мини-экскаватором траншею для коммуникаций можно быстро и качественно. Главное - найти правильного оператора!</blockquote>
+                <h3 class="review__article-title">Работа выполнена в&nbsp;срок.</h3>
+                <blockquote class="review__text">Встретились с мастером заранее и обсудили условия работы, стоимость и сроки. Сразу был заметен серьёзный подход к делу. Понравилось, что Григорий по моей просьбе приобретал необходимые расходники. Рад, что всё получилось, ведь для частного дома септик - незаменимая вещь.</blockquote>
                 <footer class="review__footer">
-                  <img class="review__photo" src="img/user-2.jpg" width="100" height="100" alt="Фото автора отзыва">
+                  <img class="review__photo" src="img/user-5.jpg" width="200" height="200" alt="Фото автора отзыва">
                   <p class="review__user">
-                    <span class="review__user-name">Алексей Ветров</span>
-                    <a class="review__user-link review__user-link--telegram" href="https://t.me/bdayeve">
-                      <span class="visually-hidden">Телеграм</span>
+                    <span class="review__user-name">Сергей Каменев</span>
+                    <a class="review__user-link review__user-link--instagram" href="https://www.instagram.com/serge.stone">
+                      <span class="visually-hidden">Инстаграм</span>
                     </a>
                   </p>
                   <p class="review__date">
-                    Дата: <time datetime="2021-05-02">02.05.2021</time>
+                    <time datetime="2021-04-26">26 апреля 2021</time>
                   </p>
-                  <p class="review__case">Услуга: прокоп для подвода коммуникаций</p>
+                  <p class="review__case">Монтаж септика</p>
                 </footer>
               </article>
             </li>
             <li class="splide__slide">
               <article class="review__article">
-                <h3 class="review__article-title">Отлично, хоть и не дёшево!</h3>
-                <blockquote class="review__text">Живу в родительском доме один. Приходится содержать хозяйство самому, а это дело нелёгкое, тем более дом старый. Весной решил заменить водопроводные трубы и подключить центральную канализацию. Для прокопа новых траншей решил обратиться к Григорию. Работой доволен, рекомендую!</blockquote>
+                <h3 class="review__article-title">Техника&nbsp;&mdash; супер!</h3>
+                <blockquote class="review__text">Нужна была траншея для фундамента небольшого летнего домика. Ребята справились всего за одну рабочую смену. Боюсь представить сколько времени у меня заняла бы самостоятельная работа. Зачем надрываться, когда для этого есть машины...</blockquote>
                 <footer class="review__footer">
-                  <img class="review__photo" src="img/user-3.jpg" width="100" height="100" alt="Фото автора отзыва">
+                  <img class="review__photo" src="img/user-6.jpg" width="200" height="200" alt="Фото автора отзыва">
                   <p class="review__user">
-                    <span class="review__user-name">Олег Сысоев</span>
-                    <a class="review__user-link review__user-link--vk" href="https://vk.com/id85958874">
+                    <span class="review__user-name">Гриша Топорков</span>
+                    <a class="review__user-link review__user-link--vk" href="https://vk.com/quepasacontigo">
                       <span class="visually-hidden">Вконтакте</span>
                     </a>
                   </p>
                   <p class="review__date">
-                    Дата: <time datetime="2021-04-25">25.04.2021</time>
+                    <time datetime="2021-04-23">23 апреля 2021</time>
                   </p>
-                  <p class="review__case">Услуга: прокоп для замены коммуникаций</p>
+                  <p class="review__case">Прокладка траншеи</p>
                 </footer>
               </article>
             </li>
@@ -141,46 +374,25 @@
         </div>
       </div>
     </section>
-    <section class="result section section--gradient-2">
-      <h2 class="result__title section__title">Результаты</h2>
-      <div class="splide splide--result">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="price section section--gradient-3">
-      <h2 class="price__title section__title">Прайс-лист</h2>
-      <div class="splide splide--price">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-            <li class="splide__slide">
-            </li>
-          </ul>
-        </div>
+    <section class="main__book book">
+      <h2 class="visually-hidden">Оставить заявку на&nbsp;услуги</h2>
+      <p class="book__lead">Cвязаться со&nbsp;мной</p>
+      <div class="book__contact-wrapper">
+        <form class="book__form form" action="https://echo.htmlacademy.ru/courses" method="POST" enctype="multipart/form-data">
+          <div class="form__label-wrapper form__label-wrapper--alt-background">
+            <label class="form__label">
+              <input class="form__input" type="tel" name="tel" placeholder="+7 (999) 859-69-15" required>
+              <span class="form__label-text">Ваш номер телефона</span>
+            </label>
+            <button class="form__reset" type="reset">
+              <span class="visually-hidden">Очистить</span>
+            </button>
+          </div>
+          <div class="form__submit-wrapper">
+            <button class="form__submit" type="submit">Заказать звонок</button>
+          </div>
+        </form>
+        <a class="book__tel" href="tel:+79998596915">+7 (999) 859-69-15</a>
       </div>
     </section>
   </div>

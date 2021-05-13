@@ -5,30 +5,26 @@ const options = {
   perPage: 2,
   perMove: 1,
   padding: {
-    left : '40px',
-    right: '40px',
+    left: '64px',
+    right: '64px',
   },
-  gap: '44px',
+  gap: '64px',
   breakpoints: {
     899: {
       perPage: 1,
       padding: {
-        left : '30px',
-        right: '30px',
+        left: 0,
+        right: 0,
       },
-      gap: '34px',
-    },
-    600: {
-      perPage: 1,
-      padding: {
-        left : '20px',
-        right: '20px',
-      },
-      gap: '24px',
+      gap: '4px',
     },
   },
 };
 
 new Splide('.splide--review', options).mount();
-new Splide('.splide--result', options).mount();
-new Splide('.splide--price', options).mount();
+new Splide('.splide--result', {
+  type: 'loop',
+  perPage: 1,
+  perMove: 1,
+  gap: '4px',
+}).mount();

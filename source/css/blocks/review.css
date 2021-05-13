@@ -1,55 +1,22 @@
 .review__article {
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding-bottom: 48px;
 }
 
 .review__article-title {
-  position: relative;
   margin-top: 0;
-  margin-bottom: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
 }
 
-.review__article-title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 1.2rem;
-  height: 1.2rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-image: url("../img/icon-quote.svg");
-  transform: translateY( -50%) rotate(180deg);
-}
-
 .review__text {
-  position: relative;
   margin: 0;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-size: 1.1rem;
-}
-
-.review__text::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
-  width: 1.2rem;
-  height: 1.2rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-image: url("../img/icon-quote.svg");
+  padding: 0 8px;
+  line-height: 24px;
 }
 
 .review__footer {
@@ -58,41 +25,45 @@
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(3, auto);
   column-gap: 20px;
+  row-gap: 4px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .review__photo {
   grid-row: 1 / 3;
   display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
 }
 
 .review__user {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  margin-top: 0;
+  margin-bottom: -5px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 700;
 }
 
 .review__user-name {
-  padding-top: 5px;
   margin-right: 10px;
   margin-bottom: 5px;
 }
 
 .review__user-link {
-  flex: 0 0 30px;
-  height: 30px;
-
+  flex: 0 0 20px;
+  height: 20px;
+  margin-bottom: 5px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  outline-offset: 4px;
   cursor: pointer;
 }
 
@@ -109,10 +80,32 @@
 }
 
 .review__date {
-  align-self: start;
   margin: 0;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .review__case {
   grid-column: 1 / -1;
+  grid-row: 3 / -1;
+  margin-top: 12px;
+  margin-bottom: 0;
+  padding: 8px 24px;
+  border-radius: 16px;
+  line-height: 24px;
+  background-color: var(--background-neutral);
+}
+
+@media (min-width: 900px) {
+  .review__article {
+    padding-bottom: 64px;
+  }
+
+  .review__article-title {
+    padding: 0;
+  }
+
+  .review__text {
+    padding: 0;
+  }
 }

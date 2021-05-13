@@ -1,21 +1,12 @@
 :root {
-  font-size: 14px;
-  line-height: 24px;
-
   /* Light theme */
 
-  --text-basic: rgba(0, 0, 0, 0.9);
-  --text-neutral: rgba(0, 0, 0, 0.6);
-  --text-placeholder: rgba(0, 0, 0, 0.3);
-  --text-invert: rgb(255, 255, 255);
-  --textshadow-basic: rgba(255, 255, 255, 0.8);
-  --textshadow-invert: rgba(0, 0, 0, 0.6);
-  --background-page: rgb(255, 255, 255);
-  --background-card: rgb(255, 255, 255);
-  --background-accent: #ffaa01;
-  --background-accent-dim: #fed480;
-  --button: #f7ce5a;
-  --button-active: #25c8d1;
-  --active-state: #25c8d1;
-  --boxshadow: rgba(0, 0, 0, 0.2);
+  --text-basic: hsl(0, 0%, 10%);
+  --text-neutral: hsl(0, 0%, 30%);
+  --text-placeholder: hsl(0, 0%, 60%);
+  --text-underline: hsl(0, 0%, 77%);
+  --background-basic: hsl(0, 0%, 100%);
+  --background-neutral: hsl(0, 0%, 94%);
+  --input-border: hsl(0, 0%, 87%);
+  --accent: hsl(44, 91%, 66%);
 }

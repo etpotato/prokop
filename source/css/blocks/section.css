@@ -1,54 +1,24 @@
 .section {
   position: relative;
-  margin-bottom: 60px;
-  padding: 20px 0 10px 0;
-  border-radius: 20px;
-  box-shadow: 0 0 10px 0 var(--boxshadow);
-  overflow: hidden;
 }
 
-.section--gradient-1 {
-  background-image: linear-gradient(to bottom right, var(--button), var(--button-active));
-}
-
-.section--gradient-2 {
-  background-image: linear-gradient(to bottom left, var(--button-active), var(--background-accent));
-}
-
-.section--gradient-3 {
-  background-image: linear-gradient(to bottom right, var(--background-accent), var(--button));
-}
-
-.section::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  bottom: 2px;
-  left: 2px;
-
-  border-radius: 19px;
-  background-color: var(--background-card);
-}
-
-.section__title {
-  position: relative;
+.section__lead {
   margin-top: 0;
-  margin-bottom: 20px;
-  color: var(--text-neutral);
-  text-align: center;
+  margin-right: auto;
+  margin-bottom: 48px;
+  max-width: 670px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.section__title-accent {
+  font-weight: 700;
 }
 
 @media (min-width: 900px) {
-  .section {
-    margin-bottom: 80px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .section__title {
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    line-height: 1.8rem;
+  .section__lead {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 64px;
   }
 }
