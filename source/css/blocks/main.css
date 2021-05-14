@@ -1,3 +1,7 @@
+.main {
+  margin-bottom: 64px;
+}
+
 .main__top-wrapper {
   margin-bottom: 56px;
 }
@@ -23,10 +27,6 @@
   margin-bottom: 80px;
 }
 
-.main__book {
-  margin-bottom: 64px;
-}
-
 @media (min-width: 360px) {
   .main__title {
     font-size: 36px;
@@ -34,6 +34,10 @@
 }
 
 @media (min-width: 900px) {
+  .main {
+    margin-bottom: 120px;
+  }
+
   .main__top-wrapper {
     display: grid;
     grid-template-columns: 1fr 45%;
@@ -62,10 +66,6 @@
   }
 
   .main__section {
-    margin-bottom: 120px;
-  }
-
-  .main__book {
     margin-bottom: 120px;
   }
 }

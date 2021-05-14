@@ -27,7 +27,7 @@
 
 @media (min-width: 900px) {
   .page {
-    padding-top: 40px;
+    padding: 40px 0;
   }
 
   .page__header {
