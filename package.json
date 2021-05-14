@@ -56,6 +56,7 @@
     "webpack-stream": "6.1.2"
   },
   "dependencies": {
-    "@splidejs/splide": "2.4.21"
+    "@splidejs/splide": "2.4.21",
+    "inputmask": "5.0.5"
   }
 }

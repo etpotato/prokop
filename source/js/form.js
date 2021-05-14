@@ -1,4 +1,6 @@
 import { sendData } from './api.js';
+import Inputmask from 'inputmask';
+// import IMask from 'imask';
 
 const PHONE_REGEX = /^(\+7|7|8)?[\s-]?\(?[489][0-9]{2}\)?[\s-]?[0-9]{2}[\s-]?([0-9][\s-]?){3}[0-9]{2}$/;
 // const ERROR_TIMEOUT = 5000;
@@ -8,6 +10,13 @@ const PHONE_REGEX = /^(\+7|7|8)?[\s-]?\(?[489][0-9]{2}\)?[\s-]?[0-9]{2}[\s-]?([0
 const form = document.querySelector('.form');
 const telInput = form.querySelector('.form__input');
 const resetButton = form.querySelector('.form__reset');
+
+const im = new Inputmask({
+  mask: '+7 (999) 999-99-99',
+  // placeholder: '    000  000 00 00',
+});
+
+im.mask(telInput);
 
 // const showInputInvalid = () => {
 //   const invalidMessage = document.createElement
