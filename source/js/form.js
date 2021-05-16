@@ -64,7 +64,14 @@ const onErrorSubmit = (error) => {
 const onSubmit = (evt) => {
   evt.preventDefault();
   if (validateTel()) {
-    sendData(new FormData(evt.target), onSuccessSubmit, onErrorSubmit);
+    const data = new FormData(evt.target);
+    const obj = {};
+    data.forEach((value, key) => {
+      obj[key] = value;
+    });
+    const dataJson = JSON.stringify(obj);
+    console.log(dataJson);
+    sendData(dataJson, onSuccessSubmit, onErrorSubmit);
   } else {
     console.log('indalid!');
   }

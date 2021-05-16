@@ -12,9 +12,11 @@ const getData = (onSuccess, onError) => {
 
 const sendData = (data, onSuccess, onError) => {
   return fetch(
-    'https://echo.htmlacademy.ru/courses',
+    'http://80.78.245.19',
+    // 'https://echo.htmlacademy.ru/courses',
     {
       method: 'POST',
+      headers: new Headers({'content-type': 'applcation/json'}),
       body: data,
     })
     .then((responce) => {

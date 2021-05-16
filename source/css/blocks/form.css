@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin-right: -12px;
   margin-bottom: -12px;
 }

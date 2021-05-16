@@ -8,7 +8,7 @@ const options = {
     left: '64px',
     right: '64px',
   },
-  gap: '64px',
+  gap: '68px',
   breakpoints: {
     899: {
       perPage: 1,
