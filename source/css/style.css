@@ -6,6 +6,7 @@
 @import "blocks/header.css";
 @import "blocks/main.css";
 @import "blocks/section.css";
+@import "blocks/button.css";
 @import "blocks/form.css";
 @import "blocks/service.css";
 @import "blocks/result.css";
@@ -13,3 +14,4 @@
 @import "blocks/book.css";
 @import "blocks/footer.css";
 @import "blocks/splide.css";
+@import "blocks/popup.css";

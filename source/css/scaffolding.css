@@ -28,6 +28,11 @@ img {
   max-width: 600px;
 }
 
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 @media (min-width: 900px) {
   .container {
     padding: 0 64px;

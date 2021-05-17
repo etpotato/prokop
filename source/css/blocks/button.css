@@ -1,0 +1,29 @@
+.button {
+  display: block;
+  padding: 18px 19px 20px 19px;
+  width: 100%;
+  min-width: 208px;
+  border-radius: 16px;
+  border: none;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--text-basic);
+  white-space: nowrap;
+  background-color: var(--accent);
+  outline-offset: 2px;
+  user-select: none;
+  touch-action: none;
+  cursor: pointer;
+}
+
+.button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: auto;
+}
+
+.button:active {
+  opacity: 0.6;
+}
