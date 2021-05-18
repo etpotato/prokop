@@ -74,7 +74,13 @@ const copyImages = () => {
     .pipe(sync.stream());
 }
 
-const copy = gulp.parallel(copyFonts, copyImages);
+const copyRobots = () => {
+  return gulp.src('source/robots.txt')
+    .pipe(gulp.dest('build/'))
+    .pipe(sync.stream());
+}
+
+const copy = gulp.parallel(copyFonts, copyImages, copyRobots);
 
 // Images
 
@@ -176,6 +182,6 @@ exports.default = gulp.series(
 
 exports.build = gulp.series(
   clear,
-  gulp.parallel(html, styles, copyFonts, optimizeImages, webp, sprite, jsProd),
+  gulp.parallel(html, styles, copyFonts, copyRobots, optimizeImages, webp, sprite, jsProd),
   server
 );
