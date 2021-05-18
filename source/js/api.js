@@ -1,18 +1,6 @@
-const getData = (onSuccess, onError) => {
-  return fetch('https://echo.htmlacademy.ru/courses')
-    .then((responce) => {
-      if (responce.ok) {
-        return responce.json();
-      }
-      throw new Error(`${responce.status} ${responce.statusText}`);
-    })
-    .then(onSuccess)
-    .catch(onError);
-};
-
 const sendData = (data, onSuccess, onError) => {
   return fetch(
-    'http://xn--24-1lcpbdde.xn--p1ai',
+    'https://xn--24-1lcpbdde.xn--p1ai',
     {
       method: 'POST',
       body: data,
@@ -26,4 +14,4 @@ const sendData = (data, onSuccess, onError) => {
     .catch(onError);
 };
 
-export { getData, sendData };
+export { sendData };

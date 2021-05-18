@@ -146,9 +146,8 @@ const onResetClick = (evt) => {
   const input = form.querySelector('.form__input');
 
   hideInputInvalid(form);
-
   input.value = '';
-  input.focus();
+  evt.target.blur();
 };
 
 const im = new Inputmask({
