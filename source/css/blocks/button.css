@@ -1,4 +1,5 @@
 .button {
+  --text-basic: hsl(0, 0%, 10%);
   display: block;
   padding: 19px;
   width: 100%;

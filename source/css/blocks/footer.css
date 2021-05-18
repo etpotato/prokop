@@ -24,6 +24,7 @@
   background-position: center;
   background-size: 100%;
   outline-offset: 4px;
+  filter: var(--image-filter);
 }
 
 .footer__social-link--instagram {

@@ -332,6 +332,7 @@ transform: rotate(90deg);
     background-position: center;
     background-image: url("../img/icon-chevron.svg");
     opacity: 1;
+    filter: var(--image-filter);
   }
 
   .splide--result .splide__arrow {

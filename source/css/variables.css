@@ -1,6 +1,4 @@
 :root {
-  /* Light theme */
-
   --text-basic: hsl(0, 0%, 10%);
   --text-neutral: hsl(0, 0%, 30%);
   --text-placeholder: hsl(0, 0%, 60%);
@@ -11,4 +9,21 @@
   --input-border: hsl(0, 0%, 87%);
   --accent: hsl(44, 91%, 66%);
   --error: hsl(7, 100%, 48%);
+  --image-filter: brightness(1) contrast(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-basic: hsl(0, 0%, 85%);
+    --text-neutral: hsl(0, 0%, 50%);
+    --text-placeholder: hsl(0, 0%, 40%);
+    --text-underline: hsl(0, 0%, 22%);
+    --background-basic: hsl(0, 0%, 8%);
+    --background-neutral: hsl(0, 0%, 18%);
+    --background-popup: hsla(0, 0%, 0%, 0.8);
+    --input-border: hsl(0, 0%, 20%);
+    --accent: hsl(43, 95%, 58%);
+    --error: hsl(7, 100%, 39%);
+    --image-filter: brightness(0.9) contrast(1.1);
+  }
 }

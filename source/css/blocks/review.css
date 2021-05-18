@@ -65,6 +65,7 @@
   background-size: 100%;
   outline-offset: 4px;
   cursor: pointer;
+  filter: var(--image-filter);
 }
 
 .review__user-link--instagram {
