@@ -152,6 +152,7 @@ const onResetClick = (evt) => {
 
 const im = new Inputmask({
   mask: '+7 (999) 999-99-99',
+  inputmode: 'tel',
 });
 
 forms.forEach((form) => {
