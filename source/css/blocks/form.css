@@ -43,6 +43,7 @@
   position: relative;
   display: block;
   border: none;
+  cursor: text;
 }
 
 .form__input {
@@ -115,18 +116,20 @@
 
 .form__reset {
   position: absolute;
+  right: 33px;
   top: 50%;
-  right: 18px;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-
-  margin: 0;
   padding: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
   border-radius: 16px;
   border: none;
+  overflow: hidden;
   background-color: var(--background-neutral);
   outline-offset: 2px;
+  clip: rect(0 0 0 0);
+  opacity: 0;
+  transform: translateY(-50%);
   transition-duration: 400ms;
   user-select: none;
   touch-action: none;
@@ -152,18 +155,13 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.form__label-wrapper:not(:focus-within) .form__reset {
-  right: 33px;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-
 .form__label-wrapper:focus-within .form__reset {
   right: 18px;
   width: 30px;
   height: 30px;
   opacity: 1;
+  clip: auto;
+  overflow: visible;
 }
 
 .form__reset:focus:not(:focus-visible) {
@@ -175,8 +173,11 @@
 }
 
 .form__reset:active {
-  width: 0;
-  height: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
   opacity: 0;
 }
 
