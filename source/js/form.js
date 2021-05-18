@@ -123,12 +123,10 @@ const openPopup = (isSuccess) => {
 
 const onSuccessSubmit = () => {
   openPopup(true);
-  // responce.text().then((text) => console.log(text));
 };
 
 const onErrorSubmit = () => {
   openPopup(false);
-  // console.log(error);
 };
 
 const onSubmit = (evt) => {
@@ -136,14 +134,8 @@ const onSubmit = (evt) => {
   if (!validateForm(evt.target)) {
     return;
   }
-
   const data = new FormData(evt.target);
-  const obj = {};
-  data.forEach((value, key) => {
-    obj[key] = value;
-  });
-  const dataJson = JSON.stringify(obj);
-  sendData(dataJson, onSuccessSubmit, onErrorSubmit);
+  sendData(data, onSuccessSubmit, onErrorSubmit);
   evt.target.querySelector('.form__submit').blur();
   evt.target.reset();
 };
