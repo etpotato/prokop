@@ -5,6 +5,7 @@
   justify-content: center;
   opacity: 0;
   transition-property: opacity;
+  transition-timing-function: ease-in;
   transition-duration: 400ms;
   touch-action: none;
 }
@@ -18,6 +19,7 @@
 
   background-color: transparent;
   transition-property: background-color;
+  transition-timing-function: ease-in;
   transition-duration: 400ms;
 }
 
@@ -32,6 +34,7 @@
   background-color: var(--background-basic);
   transform: scale(0);
   transition-property: transform;
+  transition-timing-function: ease-in;
   transition-duration: 400ms;
 }
 
@@ -80,14 +83,17 @@
 }
 
 .popup--show {
+  transition-timing-function: ease-out;
   opacity: 1;
 }
 
 .popup--show .popup__underlay {
+  transition-timing-function: ease-out;
   background-color: var(--background-popup);
 }
 
 .popup--show .popup__content {
+  transition-timing-function: ease-out;
   transform: scale(1);
 }
 

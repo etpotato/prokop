@@ -115,7 +115,7 @@ const openPopup = (isSuccess) => {
   document.body.classList.add('no-scroll');
   document.body.append(popup);
 
-  popup.classList.add('popup--show');
+  requestAnimationFrame(() => popup.classList.add('popup--show'));
   underlay.addEventListener('click', onUnderlayClick);
   popupButton.addEventListener('click', onPopupButtonClick);
   document.addEventListener('keydown', onEscPopup);
