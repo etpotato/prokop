@@ -294,6 +294,14 @@ transform: rotate(90deg);
   transform: translateY(50%);
 }
 
+.splide--no-js {
+  visibility: visible;
+}
+
+.splide--no-js .splide__list {
+  width: 100%;
+}
+
 @media (min-width: 620px) {
   .splide--result .splide__arrow {
     top: 210px;

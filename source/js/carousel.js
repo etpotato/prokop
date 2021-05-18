@@ -12,6 +12,7 @@ const options = {
   breakpoints: {
     899: {
       perPage: 1,
+      perMove: 1,
       padding: {
         left: 0,
         right: 0,
@@ -21,8 +22,13 @@ const options = {
   },
 };
 
-new Splide('.splide--review', options).mount();
-new Splide('.splide--result', {
+const splideReview = document.querySelector('.splide--review');
+const splideResult = document.querySelector('.splide--result');
+splideReview.classList.remove('splide--no-js');
+splideResult.classList.remove('splide--no-js');
+
+new Splide(splideReview, options).mount();
+new Splide(splideResult, {
   type: 'loop',
   perPage: 1,
   perMove: 1,
