@@ -3,7 +3,7 @@ import Splide from '@splidejs/splide';
 const options = {
   type: 'loop',
   perPage: 2,
-  perMove: 1,
+  perMove: 2,
   padding: {
     left: '64px',
     right: '64px',

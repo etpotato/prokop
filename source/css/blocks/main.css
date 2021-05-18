@@ -54,6 +54,7 @@
     max-width: 100%;
     font-size: min(56px, 4vw);
     line-height: min(64px, 4.6vw);
+    font-weight: 700;
   }
 
   .main__title-picture {

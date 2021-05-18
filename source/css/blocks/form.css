@@ -47,7 +47,7 @@
 
 .form__input {
   display: block;
-  padding: 15px 18px 17px 18px;
+  padding: 16px 18px 16px 18px;
   width: 100%;
   color: var(--text-basic);
   font-size: 18px;
@@ -70,11 +70,10 @@
 
 .form__label-text {
   position: absolute;
-  top: 50%;
+  top: 17px;
   left: 18px;
   right: 18px;
   transform-origin: 0 0;
-  transform: translateY(-60%);
   font-size: 18px;
   line-height: 22px;
   transition-property: top, transform;
