@@ -1,0 +1,23 @@
+{
+  "lang": "ru",
+  "dir": "ltr",
+  "name": "prokop24",
+  "short_name": "prokop24",
+  "description": "Земляные работы в Москве и Московской области",
+  "icons": [
+    {
+      "src": "img/icon-16x16.png",
+      "sizes": "16x16"
+    },{
+      "src": "img/icon-32x32.png",
+      "sizes": "32x32"
+    },{
+      "src": "img/icon-192x192.png",
+      "sizes": "192x192"
+    }],
+  "scope": "/",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "any",
+  "theme_color": "#f7cd59"
+}
