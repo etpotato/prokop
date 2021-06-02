@@ -7,4 +7,12 @@
 .header__tel {
   color: var(--text-basic);
   text-decoration-color: var(--text-underline);
+  transition-duration: 100ms;
+}
+
+@media (hover: hover) {
+  .header__tel:hover {
+    color: var(--text-tel-hover);
+    text-decoration-color: var(--text-basic);
+  }
 }

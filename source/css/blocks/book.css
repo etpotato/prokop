@@ -26,6 +26,14 @@
   color: var(--text-basic);
   text-align: center;
   text-decoration-color: var(--text-underline);
+  transition-duration: 100ms;
+}
+
+@media (hover: hover) {
+  .book__tel:hover {
+    color: var(--text-tel-hover);
+    text-decoration-color: var(--text-basic);
+  }
 }
 
 @media (min-width: 360px) {

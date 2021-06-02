@@ -3,9 +3,12 @@
   --text-neutral: hsl(0, 0%, 30%);
   --text-placeholder: hsl(0, 0%, 60%);
   --text-underline: hsl(0, 0%, 77%);
+  --text-button-hover: hsl(0, 0%, 100%);
   --background-basic: hsl(0, 0%, 100%);
   --background-neutral: hsl(0, 0%, 94%);
   --background-popup: hsla(0, 0%, 0%, 0.8);
+  --background-hover: hsl(0, 0%, 10%);
+  --border-hover: hsl(0, 0%, 10%);
   --input-border: hsl(0, 0%, 87%);
   --accent: hsl(44, 91%, 66%);
   --error: hsl(7, 100%, 48%);
@@ -18,9 +21,13 @@
     --text-neutral: hsl(0, 0%, 50%);
     --text-placeholder: hsl(0, 0%, 40%);
     --text-underline: hsl(0, 0%, 22%);
+    --text-tel-hover: hsl(0, 0%, 100%);
+    --text-button-hover: hsl(0, 0%, 85%);
     --background-basic: hsl(0, 0%, 8%);
     --background-neutral: hsl(0, 0%, 18%);
     --background-popup: hsla(0, 0%, 0%, 0.8);
+    --background-hover: hsl(0, 0%, 8%);
+    --border-hover: hsl(43, 95%, 58%);
     --input-border: hsl(0, 0%, 20%);
     --accent: hsl(43, 95%, 58%);
     --error: hsl(7, 100%, 39%);

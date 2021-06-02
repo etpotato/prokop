@@ -15,6 +15,8 @@
   user-select: none;
   touch-action: none;
   cursor: pointer;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 100ms;
 }
 
 .button:focus:not(:focus-visible) {
@@ -27,4 +29,12 @@
 
 .button:active {
   opacity: 0.6;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    color: var(--text-button-hover);
+    background-color: var(--background-hover);
+    box-shadow: 0 0 0 2px var(--border-hover) inset;
+  }
 }
