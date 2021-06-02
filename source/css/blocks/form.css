@@ -61,10 +61,6 @@
   appearance: none;
 }
 
-.form__input:focus-visible {
-  outline: auto;
-}
-
 .form__input::placeholder {
   color: transparent;
 }
