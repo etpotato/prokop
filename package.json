@@ -58,5 +58,8 @@
   "dependencies": {
     "@splidejs/splide": "2.4.21",
     "inputmask": "5.0.5"
+  },
+  "volta": {
+    "node": "14.15.0"
   }
 }

@@ -188,6 +188,15 @@ exports.default = gulp.series(
 
 exports.build = gulp.series(
   clear,
-  gulp.parallel(html, styles, copyFonts, copyRobots, copyManifest, optimizeImages, webp, sprite, jsProd),
-  server
+  gulp.parallel(
+    html, 
+    styles, 
+    copyFonts, 
+    copyRobots, 
+    copyManifest, 
+    optimizeImages, 
+    webp, 
+    sprite, 
+    jsProd
+  ),
 );
